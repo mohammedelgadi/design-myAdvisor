@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background: #f1f1f1;
+    box-shadow: 1px 1px 2px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logo-img{
+    height: 3rem;
+    display: inline-block;
+}
+
+.menu-burger{
+    display: inline-block;
+    width: 2rem;
+    position: absolute;
+    right: 10px;
+}
+.menu-burger__batton{
+    height: 0.1rem;
+    margin: 8px 0;
+    background-color: black;
+    display: block;
+}
+
+.udi-menu:before {
+    content: "\E73B";
+}
+
+.menu-navigation{
+    list-style: none;
+    position : absolute;
+    right: 20px;
+    height: 100%;
+    display: none;
+}
+
+.menu-navigation__items{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+.menu-navigation__item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu-navigation__item a{
+    display: inline-block;
+}
+
+.menu-navigation__item:hover{
+    background-color:  rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.connection-panel{
+    box-shadow: 1px 1px 2px;
+    border-radius: 2rem;
+    display: none;
+}
+
+
+
+@media(min-width : 40rem){
+    .menu-burger{
+        display: none;
+    }
+
+    .menu-navigation{
+        display: block;
+    }
+
+
+    .connection-section{
+        height: 50vh;
+        background: url(language.png);
+        position : relative;
+    }    
+    
+    .connection-panel{
+        background: #f1f1f1; 
+        width: 30rem;
+        min-width: 30rem;
+        min-width: 30rem;
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+        display: block;
+    }
+    
+}
